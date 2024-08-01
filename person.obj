@@ -1,0 +1,8 @@
+const person = {
+    age: 27,
+    job: "Fullstack Web Developer",
+    name: "Sourav Sanyal",
+    degree: "B.Tech in Electronics"
+};
+
+console.log(person['age'] + " " + person.name + " " + person.degree + " " + person.job);
