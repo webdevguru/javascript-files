@@ -28,3 +28,39 @@ console.log(user.Great_Grand_Mother_Name);
 
 
 
+
+
+
+
+
+const user = {
+    firstname: "Sourav",
+    lastname: "Sanyal",
+    address: { houseNumber: '688/1,Ashoknagar' },
+    Degree: "Electronics and Communication Engineering",
+    profession: "Mern Stack Developer",    
+    Father_name: "Malay Ranjan Sanyal",
+    Mother_name: "Minu Sanyal",
+    Elder_Brother_Name: "Sudipto Sanyal",
+    Grand_Father_Name: "Nihar Ranjan Sanyal",
+    Grand_Mother_Name: "Mira Sanyal",
+    Great_Grand_Father_Name: "Rajnai Ranjan Sanyal",
+    Great_Grand_Mother_Name: "Ganoda Sundori Devi",
+}
+
+// Example with existing properties
+console.log(user?.firstname); // Output: "Sourav"
+console.log(user?.lastname);  // Output: "Sanyal"
+console.log(user?.address?.houseNumber); // Output: "688/1,Ashoknagar"
+
+// Example with non-existing properties (won't throw an error)
+console.log(user?.middleName); // Output: undefined
+console.log(user?.address?.zipCode); // Output: undefined
+
+// Optional chaining in nested properties
+console.log(user?.address?.houseNumber); // Output: "688/1,Ashoknagar"
+console.log(user?.address?.streetName); // Output: undefined
+
+
+
+
