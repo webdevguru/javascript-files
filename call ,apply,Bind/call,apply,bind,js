@@ -1,0 +1,36 @@
+function about(Deptname, Empid) {
+    console.log(this.First_name, this.age, Empid, Deptname);
+}
+
+const employee1 = {
+    First_name: "sourav",
+    Last_Name: "sanyal",
+    age: 19,
+};
+
+const employee2 = {
+    First_name: "Bill",
+    Last_Name: "Gates",
+    age: 81,
+};
+// call
+
+// Using 'call()' to set the context to 'employee2'
+about.call(employee2, "cse", 101); // Output: Bill 81 101 cse
+
+// Using 'call()' to set the context to 'employee1'
+about.call(employee1, "ece", 199); // Output: sourav 19 199 ece
+
+
+//Apply
+
+about.apply(employee1,["T.C.S","Kolkata"])
+about.apply(employee2,["capgemini","Pune"])
+
+//Bind
+
+about.bind(employee1,"Apple","DSA");
+
+const func= about.bind(employee1,"Apple","DSA");
+
+func();
