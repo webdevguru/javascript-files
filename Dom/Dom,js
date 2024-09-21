@@ -1,1 +1,11 @@
+const heading = document.querySelector(".hero div h1");
+console.log(heading);
+
+heading.innerHTML = "ami je tomar";
+
+const paragraph = document.querySelector(".about p");
+console.log(paragraph);
+
+// Set a valid attribute
+paragraph.setAttribute("data-status", "I am fine");
 
