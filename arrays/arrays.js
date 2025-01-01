@@ -1,4 +1,4 @@
-// Original arrays
+// Original arrays//
 let array1 = ["item1", "item2"];
 let array2 = ["item1", "item2"];
 console.log(array1, array2); // Print the original arrays
