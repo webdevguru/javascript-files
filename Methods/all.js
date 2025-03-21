@@ -1,4 +1,4 @@
-// Sample array of objects
+// Sample array of objects/
 const products = [
   { name: 'Laptop', price: 800, category: 'Electronics' },
   { name: 'Phone', price: 600, category: 'Electronics' },
