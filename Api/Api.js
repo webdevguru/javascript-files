@@ -1,4 +1,4 @@
-// Api  call
+/// Api  call
 // calling api
 In programming, an API (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other. APIs define the methods and data formats that applications use to interact with each other. They are commonly used to access web services, databases, or other software systems, making it easier to integrate different functionalities without needing to know the internal workings of each part.
 
